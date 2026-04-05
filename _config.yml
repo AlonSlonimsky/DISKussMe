@@ -1,0 +1,10 @@
+title: "Project Documentation"
+description: "Development summary, features, and postmortem"
+baseurl: "/DISKussMe"
+url: "https://AlonSlonimsky.github.io"
+
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-seo-tag

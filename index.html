@@ -1,0 +1,394 @@
+---
+layout: default
+title: Home
+---
+
+<header class="hero">
+  <p class="hero-eyebrow">Project Documentation</p>
+  <h1><em>DISK</em>ussMe</h1>
+  <p class="hero-desc">
+    A comprehensive record of the project's vision, features, team structure,
+    and development retrospective.
+  </p>
+  <hr class="hero-divider" />
+</header>
+
+<div class="doc-container">
+
+  <!-- ============================
+       SECTION 1 — OVERVIEW
+       ============================ -->
+  <section class="doc-section" id="overview">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <h2 class="section-title">Project Overview</h2>
+    </div>
+
+    <div class="card-grid" style="grid-template-columns: repeat(2, 1fr);">
+
+      <div class="card">
+        <p class="card-label">Vision Statement</p>
+        <h3>Project Vision</h3>
+        <p style="font-family:var(--font-mono); font-size:0.78rem; color:var(--text-muted);">Music has always brought people together, but finding a space where musicians and enthusiasts can 
+share their perspectives, discover new ideas, and feel genuinely heard is harder than it should be. 
+DISKussMe! exists to change that. Rather than relying on large general-purpose social media platforms 
+where music content can get buried or lost, DISKussMe! focuses entirely on helping users discover and 
+connect through their shared interest in music.
+<br>
+DISKussMe! is a community forum built specifically for music lovers to share their thoughts, experiences, 
+and knowledge about the music that moves them. Whether someone is a seasoned guitarist, a casual listener 
+with strong opinions on genres, or a producer exploring new techniques, DISKussMe! gives them a place 
+to put their voice into the world and connect with others who care just as deeply.
+<br>
+DISKussMe! makes it easy for users to create posts about artists, genres, instruments, performances, 
+albums, or other music topics that matter to them. Users can browse posts, search for content that 
+matches their interests, and explore the profiles of other users to better understand their musical 
+background and perspective. By making it simple to view, create, and revisit music-related content, 
+DISKussMe! aims to encourage users to engage more deeply with music and feel more connected to a community 
+of people with similar interests.
+<br>
+DISKussMe! also supports self-expression by allowing users to personalize their profiles with information 
+about their musical tastes, interests, and instruments they play. They are also able to manage their 
+own content by editing or deleting posts. This helps users present who they are musically, keep their 
+posts relevant and discover others with similar interests.
+<br>
+DISKussMe! will be considered successful when it becomes the go-to space for music-focused discussion. 
+Success will be measured by attracting 500 registered users within the first three months of release, 
+achieving a user retention rate of at least 50% from Month 1 to Month 3, and maintaining an average 
+of 20 or more new posts per week sustained over that same period.</p>
+      </div>
+
+      <div class="card">
+        <p class="card-label">Intended Users</p>
+        <h3>Target Audience</h3>
+        <p style="font-family:var(--font-mono); font-size:0.78rem; color:var(--text-muted);">DISKussMe! is a music-focused app that empowers music lovers, from musicians to casual listeners,
+           who want to share their perspectives, discover new ideas, and connect with others who share their passion for music.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================
+       SECTION 2 — FEATURES
+       ============================ -->
+  <section class="doc-section" id="features">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <h2 class="section-title">Major Features</h2>
+    </div>
+
+    <ul class="feature-list">
+      <li>
+        <button class="video-trigger" onclick="document.getElementById('login-video-modal').classList.add('open')">
+          Users can log in and sign out.
+        </button>
+      </li>
+      <li>
+        <button class="video-trigger" onclick="document.getElementById('video-modal').classList.add('open')">
+          Users can create posts.
+        </button>
+      </li>
+      <li>Users can select any post to view it in more detail.</li>
+      <li>Users can delete and edit their own posts when viewing them.</li>
+      <li>Users can view profiles.</li>
+      <li>Users can edit their own profile.</li>
+      <li>Navigation bar provides easy access between pages.</li>
+    </ul>
+  </section>
+
+  <!-- ============================
+       SECTION 3 — TEAM
+       ============================ -->
+  <section class="doc-section" id="team">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <h2 class="section-title">Team</h2>
+    </div>
+
+    <div class="card-grid" style="grid-template-columns: repeat(2, 1fr);">
+
+      <div class="card">
+        <p class="card-label">Members &amp; Contributions</p>
+        <h3>Team Roster</h3>
+        <div style="display:flex; flex-direction:column; gap:0.6rem; margin-top:0.5rem;">
+          
+          <div>
+            <div style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:0.25rem;">Briana Pauls</div>
+            <ul style="margin:0 0 0 1rem; padding:0; display:flex; flex-direction:column; gap:0.2rem;">
+              <li style="font-size:0.78rem; color:var(--text-muted);">TODO</li>
+            </ul>
+          </div>          
+          <div>
+            <div style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:0.25rem;">Carter Lupkowski</div>
+            <ul style="margin:0 0 0 1rem; padding:0; display:flex; flex-direction:column; gap:0.2rem;">
+              <li style="font-size:0.78rem; color:var(--text-muted);">UI naviagtion</li>
+              <li style="font-size:0.78rem; color:var(--text-muted);">UI notifications</li>
+              <li style="font-size:0.78rem; color:var(--text-muted);">Refactored UI from activies to fragments</li>
+              <li style="font-size:0.78rem; color:var(--text-muted);">UI post filtering</li>
+              <li style="font-size:0.78rem; color:var(--text-muted);">Refactored TagWidgetHelper</li>
+              <li style="font-size:0.78rem; color:var(--text-muted);">UI tags</li>
+            </ul>
+          </div>
+
+          <div>
+            <div style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:0.25rem;">Felix Ross</div>
+            <ul style="margin:0 0 0 1rem; padding:0; display:flex; flex-direction:column; gap:0.2rem;">
+              <li style="font-size:0.78rem; color:var(--text-muted);">Unit Tests</li>
+              <li style="font-size:0.78rem; color:var(--text-muted);">Integration Tests</li>
+              <li style="font-size:0.78rem; color:var(--text-muted);">E2e Tests</li>
+              <li style="font-size:0.78rem; color:var(--text-muted);">Validation</li>
+              <li style="font-size:0.78rem; color:var(--text-muted);">Logic Layer Functionality</li>
+              <li style="font-size:0.78rem; color:var(--text-muted);">Code Documentation</li>
+            </ul>
+          </div>
+
+          <div>
+            <div style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:0.25rem;">Elizabeth Stoughton</div>
+            <ul style="margin:0 0 0 1rem; padding:0; display:flex; flex-direction:column; gap:0.2rem;">
+              <li style="font-size:0.78rem; color:var(--text-muted);">Unit Tests</li>
+              <li style="font-size:0.78rem; color:var(--text-muted);">Integration Tests</li>
+              <li style="font-size:0.78rem; color:var(--text-muted);">E2e Tests</li>
+              <li style="font-size:0.78rem; color:var(--text-muted);">Validation</li>
+              <li style="font-size:0.78rem; color:var(--text-muted);">Logic Layer Functionality</li>
+            </ul>
+          </div>
+
+          <div>
+            <div style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:0.25rem;">Alon Slonimsky</div>
+            <ul style="margin:0 0 0 1rem; padding:0; display:flex; flex-direction:column; gap:0.2rem;">
+              <li style="font-size:0.78rem; color:var(--text-muted);">Stub Database</li>
+              <li style="font-size:0.78rem; color:var(--text-muted);">SQL Database</li>
+              <li style="font-size:0.78rem; color:var(--text-muted);">Generating and Inserting Seed Data</li>
+              <li style="font-size:0.78rem; color:var(--text-muted);">UI for Editing, Selecting, and Deleting Posts</li>
+              <li style="font-size:0.78rem; color:var(--text-muted);">Refactored TagWidgetHelper</li>
+              <li style="font-size:0.78rem; color:var(--text-muted);">This site</li>
+            </ul>
+          </div>
+
+          <div>
+            <div style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:0.25rem;">Luisa Velandia Castaneda</div>
+            <ul style="margin:0 0 0 1rem; padding:0; display:flex; flex-direction:column; gap:0.2rem;">
+              <li style="font-size:0.78rem; color:var(--text-muted);">Stub Database</li>
+              <li style="font-size:0.78rem; color:var(--text-muted);">SQL Database</li>
+              <li style="font-size:0.78rem; color:var(--text-muted);">Architecture Diagram</li>
+              <li style="font-size:0.78rem; color:var(--text-muted);">UI and Logic for Login Feature</li>
+              <li style="font-size:0.78rem; color:var(--text-muted);">Gitlab Management</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card">
+        <p class="card-label">Skills Gained</p>
+        <h3>Technical Growth</h3>
+        <p style="font-family:var(--font-mono); font-size:0.78rem; color:var(--text-muted);">— to be completed —</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================
+       SECTION 4 — POSTMORTEM
+       ============================ -->
+  <section class="doc-section" id="postmortem">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <h2 class="section-title">Development Postmortem</h2>
+    </div>
+
+    <!-- Architecture -->
+    <div style="margin-bottom: 2.5rem;">
+      <p class="card-label" style="margin-bottom: 1rem;">Overall Architecture</p>
+      <div class="arch-block">
+        <div class="arch-block-header">
+          <div class="arch-block-dots">
+            <i></i><i></i><i></i>
+          </div>
+          <span>System Layers</span>
+        </div>
+        <div class="arch-block-body">
+          <div class="arch-layers">
+            <div class="arch-layer presentation">
+              <span class="arch-layer-tag">Presentation</span>
+              <p>UI layer — fragments-based interface, navigation, and user-facing components.</p>
+            </div>
+            <div class="arch-connector">↓</div>
+            <div class="arch-layer logic">
+              <span class="arch-layer-tag">Logic</span>
+              <p>Business logic, application flow, and feature processing.</p>
+            </div>
+            <div class="arch-connector">↓</div>
+            <div class="arch-layer persistence">
+              <span class="arch-layer-tag">Persistence</span>
+              <p>Database layer — completed early in iteration 2; team members shifted to support UI.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Postmortem grid -->
+    <div class="postmortem-grid">
+
+      <!-- What changed -->
+      <div class="pm-item">
+        <p class="pm-item-label note">Change</p>
+        <h3>What Changed?</h3>
+        <p>— to be completed —</p>
+      </div>
+
+      <!-- Was improvement successful -->
+      <div class="pm-item">
+        <p class="pm-item-label note">Outcome</p>
+        <h3>Was the Improvement Successful?</h3>
+        <p>— to be completed —</p>
+      </div>
+
+      <!-- Evidence -->
+      <div class="pm-item">
+        <p class="pm-item-label note">Evidence</p>
+        <h3>Supporting Evidence</h3>
+        <p>— to be completed —</p>
+      </div>
+
+      <!-- What went well -->
+      <div class="pm-item">
+        <p class="pm-item-label good">Went Well</p>
+        <h3>What Went Well</h3>
+        <p>The distribution of work between the layers let team members take ownership of portions of the project, 
+          and made it so that there was an obvious source of knowledge whenever someone else had to interact with those portions.</p>
+      </div>
+
+      <!-- Task split -->
+      <div class="pm-item full-width">
+        <p class="pm-item-label note">Organization</p>
+        <h3>Team Task Split &amp; Distribution</h3>
+        <p>
+          The team was initially split into pairs working on presentation, logic, and persistence
+          respectively. Persistence was a smaller task than the others and was mostly complete
+          early into iteration 2, so those two team members began assisting on UI while
+          maintaining any database functionality that needed to be added.
+        </p>
+      </div>
+
+      <!-- What went wrong -->
+      <div class="pm-item full-width">
+        <p class="pm-item-label bad">Went Wrong</p>
+        <h3>What Went Wrong</h3>
+        <p>
+          Late into the first two iterations, the team experienced a very large crunch period
+          completing tasks that should have been addressed earlier.
+        </p>
+      </div>
+
+      <!-- What to change -->
+      <div class="pm-item">
+        <p class="pm-item-label warn">Retrospective</p>
+        <h3>What Would You Change?</h3>
+        <p>— to be completed —</p>
+      </div>
+
+      <!-- Project size -->
+      <div class="pm-item">
+        <p class="pm-item-label note">Metrics</p>
+        <h3>Project Size</h3>
+        <p>Classes, methods, components, etc. — to be completed —</p>
+      </div>
+
+      <!-- Distribution of effort -->
+      <div class="pm-item full-width">
+        <p class="pm-item-label note">Effort Distribution</p>
+        <h3>Distribution of Effort Across Layers</h3>
+        <p>
+          We initially split our team members into pairs working on presentation, logic, and persistence respectively.
+          Persistence however was a smaller task than the others and was mostly complete early into iteration 2, 
+          so the two team members started helping on the UI while maintaining any db functionality that had to be added. 
+        </p>
+      </div>
+
+      <!-- Time spent -->
+      <div class="pm-item full-width">
+        <p class="pm-item-label note">Time</p>
+        <h3>Time Spent on Various Tasks</h3>
+        <p>We expected the SQLite database to be a larger portion of the work throughout the project than it was, so we had to reassign team members to other roles as the database was complete.</p>
+      </div>
+
+      <!-- Design decisions -->
+      <div class="pm-item full-width">
+        <p class="pm-item-label good">Design</p>
+        <h3>Design Smells or Strong Design Decisions</h3>
+        <p>
+          Early in iteration 2, the team decided to refactor the UI into a fragments-based
+          architecture, which improved modularity and maintainability.
+        </p>
+      </div>
+
+      <!-- Outstanding bugs -->
+      <div class="pm-item">
+        <p class="pm-item-label bad">Tech Debt</p>
+        <h3>Outstanding Bugs or Technical Debt</h3>
+        <p>A piece of technical debt that did not get resolved is the ability to create an account on the DiskussMe platform. In iterations 2 & 3, we created the ability for users to login and logout of the application, better separating the current user from others. However, if a new user wanted to join the platform, they have no way to register an account and will simply be met with a login page they can’t complete. 
+<br>
+The technical debt is deliberate and prudent. The ability to add new users is out of the scope of our current project goals. Specifically, this is an implementation detail we will “deal with later” prior to an official public release.  
+<br>
+Given one more iteration, to implement new user registration, we would need the following in each layer. 
+<br>
+Presentation: A button located on the login page linked to a new fragment that allows the user to create a unique username and password. Other profile features such as a picture, tags and description would be available to edit after account creation in the profile tab. 
+<br>
+Logic: A set of functions to ensure the user does not already exist. That is, the username is unique and the password meets certain expectations (longer then 5 characters, contains a number, etc.) 
+<br>
+Persistence: The ability to store a new user. </p>
+      </div>
+
+      <!-- Unexpected challenges -->
+      <div class="pm-item">
+        <p class="pm-item-label bad">Challenges</p>
+        <h3>Unexpected Technical Challenges</h3>
+        <p>— to be completed —</p>
+      </div>
+
+      <!-- TDD / Scrums -->
+      <div class="pm-item">
+        <p class="pm-item-label note">Process</p>
+        <h3>Techniques Covered in Course</h3>
+        <p>TDD, scrums, and other methodologies — to be completed —</p>
+      </div>
+
+      <!-- Evolution from iteration 0 -->
+      <div class="pm-item">
+        <p class="pm-item-label note">Evolution</p>
+        <h3>Evolution from Iteration 0 Vision</h3>
+        <p>— to be completed —</p>
+      </div>
+
+      <!-- Lessons learned -->
+      <div class="pm-item full-width">
+        <p class="pm-item-label good">Lessons</p>
+        <h3>Lessons Learned About Teamwork and Large Projects</h3>
+        <p>— to be completed —</p>
+      </div>
+
+    </div><!-- end postmortem-grid -->
+  </section>
+  <!-- Video Modal -->
+  <div id="video-modal" class="video-modal-overlay" onclick="if(event.target===this){closeVideoModal()}">
+    <div class="video-modal-box">
+      <button class="video-modal-close" onclick="closeVideoModal()" aria-label="Close">&times;</button>
+      <video id="demo-video" controls width="100%">
+        <source src="{{ site.baseurl }}/DISKussMePresentationCreatePost.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+  <!-- Login/Signout Video Modal -->
+  <div id="login-video-modal" class="video-modal-overlay" onclick="if(event.target===this){closeLoginVideoModal()}">
+    <div class="video-modal-box">
+      <button class="video-modal-close" onclick="closeLoginVideoModal()" aria-label="Close">&times;</button>
+      <video id="login-demo-video" controls width="100%">
+        <source src="{{ site.baseurl }}/DiskussMeLoginSignout.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</div><!-- end doc-container -->
