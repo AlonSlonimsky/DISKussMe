@@ -48,9 +48,17 @@ function closeLoginVideoModal() {
   video.pause();
 }
 
+function closeEditProfileVideoModal() {
+  const modal = document.getElementById('edit-profile-video-modal');
+  const video = document.getElementById('edit-profile-demo-video');
+  modal.classList.remove('open');
+  video.pause();
+}
+
 document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape') {
     closeVideoModal();
     closeLoginVideoModal();
+    closeEditProfileVideoModal();
   }
 });
