@@ -87,6 +87,10 @@ of 20 or more new posts per week sustained over that same period.</p>
         <button class="video-trigger" onclick="document.getElementById('video-modal').classList.add('open')">▶ Demo</button>
       </li>
       <li>Users can select any post to view it in more detail.</li>
+      <li>
+        Users can search and filter for posts.
+        <button class="video-trigger" onclick="document.getElementById('post-view-video-modal').classList.add('open')">▶ Demo</button>
+      </li>
       <li>Users can delete and edit their own posts when viewing them.</li>
       <li>
         Users can edit their own profile.
@@ -396,6 +400,15 @@ Persistence: The ability to store a new user. </p>
       <button class="video-modal-close" onclick="closeEditProfileVideoModal()" aria-label="Close">&times;</button>
       <video id="edit-profile-demo-video" controls width="100%">
         <source src="{{ site.baseurl }}/DISKussMeEditProfile.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+  <div id="post-view-video-modal" class="video-modal-overlay" onclick="if(event.target===this){closePostViewVideoModal()}">
+    <div class="video-modal-box">
+      <button class="video-modal-close" onclick="closePostViewVideoModal()" aria-label="Close">&times;</button>
+      <video id="post-view-demo-video" controls width="100%">
+        <source src="{{ site.baseurl }}/DiskussMePostViewSearch.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
