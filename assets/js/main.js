@@ -60,6 +60,12 @@ function closePostViewVideoModal() {
   modal.classList.remove('open');
   video.pause();
 }
+function closePostEditVideoModal() {
+  const modal = document.getElementById('post-edit-video-modal');
+  const video = document.getElementById('post-edit-demo-video');
+  modal.classList.remove('open');
+  video.pause();
+}
 
 document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape') {
@@ -67,5 +73,6 @@ document.addEventListener('keydown', function(e) {
     closeLoginVideoModal();
     closeEditProfileVideoModal();
     closePostViewVideoModal();
+    closePostEditVideoModal();
   }
 });
