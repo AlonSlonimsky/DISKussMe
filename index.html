@@ -391,24 +391,21 @@ Lastly, our Iteration 1 UI relied entirely on activities. As the app grew, this 
         <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:1rem;">
           <div>
             <p style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent); margin-bottom:0.5rem;">Iteration 1</p>
-            <a href="{{ site.baseurl }}/Iteration1ArchDiagram.png" target="_blank">
-              <img src="{{ site.baseurl }}/Iteration1ArchDiagram.png" alt="Iteration 1 Architecture Diagram"
+            <img src="{{ site.baseurl }}/Iteration1ArchDiagram.png" alt="Iteration 1 Architecture Diagram"
+                onclick="openImageModal(this.src)"
                 style="width:100%; border-radius:var(--radius); border:1px solid var(--border); cursor:zoom-in;">
-            </a>
           </div>
           <div>
             <p style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent); margin-bottom:0.5rem;">Iteration 2</p>
-            <a href="{{ site.baseurl }}/Iteration2ArchDiagram.png" target="_blank">
-              <img src="{{ site.baseurl }}/Iteration2ArchDiagram.png" alt="Iteration 2 Architecture Diagram"
+            <img src="{{ site.baseurl }}/Iteration2ArchDiagram.png" alt="Iteration 2 Architecture Diagram"
+                onclick="openImageModal(this.src)"
                 style="width:100%; border-radius:var(--radius); border:1px solid var(--border); cursor:zoom-in;">
-            </a>
           </div>
           <div>
             <p style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent); margin-bottom:0.5rem;">Iteration 3</p>
-            <a href="{{ site.baseurl }}/Iteration3ArchDiagram.png" target="_blank">
-              <img src="{{ site.baseurl }}/Iteration3ArchDiagram.png" alt="Iteration 3 Architecture Diagram"
+            <img src="{{ site.baseurl }}/Iteration3ArchDiagram.png" alt="Iteration 3 Architecture Diagram"
+                onclick="openImageModal(this.src)"
                 style="width:100%; border-radius:var(--radius); border:1px solid var(--border); cursor:zoom-in;">
-            </a>
           </div>
         </div>
       </div>
@@ -533,6 +530,14 @@ Persistence: The ability to store a new user. </p>
         <source src="{{ site.baseurl }}/DiskussMePostEdit.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
+    </div>
+  </div>
+  <!-- Image Modal -->
+  <div id="image-modal" class="video-modal-overlay" onclick="if(event.target===this){closeImageModal()}">
+    <div class="video-modal-box">
+      <button class="video-modal-close" onclick="closeImageModal()" aria-label="Close">&times;</button>
+      <img id="image-modal-img" src="" alt="Architecture Diagram"
+        style="width:100%; display:block; border-radius:var(--radius);">
     </div>
   </div>
 </div><!-- end doc-container -->

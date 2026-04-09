@@ -66,6 +66,15 @@ function closePostEditVideoModal() {
   modal.classList.remove('open');
   video.pause();
 }
+function openImageModal(src) {
+  document.getElementById('image-modal-img').src = src;
+  document.getElementById('image-modal').classList.add('open');
+}
+
+function closeImageModal() {
+  document.getElementById('image-modal').classList.remove('open');
+  document.getElementById('image-modal-img').src = '';
+}
 
 document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape') {
@@ -74,5 +83,6 @@ document.addEventListener('keydown', function(e) {
     closeEditProfileVideoModal();
     closePostViewVideoModal();
     closePostEditVideoModal();
+    closeImageModal();
   }
 });
