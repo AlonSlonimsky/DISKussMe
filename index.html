@@ -320,8 +320,6 @@ We also started to enforce the team splits less as we took ownership of features
           We implemented a Fragment Factory to tackle the OCP violation, which also helped us to shorten DiskussMe­MainActivity. Although we initially thought this would address the OCP violation, we realized during this reflection that it merely moved the violation to another class, since the factory class must be modified if a new Fragment were added.
           <br>
           We also added try-catches in the UI for exceptions thrown by the logic layer. This made the app safer from crashing and ensured it would never fail silently. If a critical error occurs, it pops the fragment back stack to the most recent stable fragment and notifies the user of what happened. The specific issue has also been added to the Log to better fix errors.
-          <br>
-          This shift in the teams allowed us to more quickly add features and work through entire user flows individually.
           <br><br>
           <a href="https://code.cs.umanitoba.ca/comp3350-winter2026/a02-g07-discussme/-/blob/main/app/src/main/java/comp3350/diskussme/presentation/helper/FragmentFactory.java?ref_type=heads"
             target="_blank"
